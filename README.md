@@ -10,10 +10,10 @@ _Tomasz Żelawski_
 - VLAN'y 5 (minimum 4 vlany)
 - Etherchannel 5
 - Redystrybucja 5 (z wersja BGP 10)
-- NAT 10
-- DHCP 10
+- ~~NAT 10~~
+- ~~DHCP 10~~
 - Ekstra fiber links w ISP 2
-- ACL for WWW,SMTP 5
+- **ACL for WWW,SMTP 5** (chyba nie do konca)()
 - Mail serwer 3
 
 - Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z klasy C
