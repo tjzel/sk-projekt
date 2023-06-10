@@ -1,0 +1,7 @@
+configure terminal
+router ospf 0
+network 1.0.0.24 0.0.0.3 area 0
+network 1.0.0.20 0.0.0.3 area 0
+network 1.0.0.40 0.0.0.3 area 0 #?
+exit
+exit
