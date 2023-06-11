@@ -1,0 +1,24 @@
+enable
+configure terminal
+
+hostname Router1
+
+interface GigabitEthernet0/0
+ip address 1.0.0.30 255.255.255.252
+exit
+
+interface GigabitEthernet0/1
+ip address 1.0.0.33 255.255.255.252
+exit
+
+interface GigabitEthernet0/2
+ip address 1.0.0.45 255.255.255.252
+exit
+
+router ospf 1
+network 1.0.0.28 0.0.0.3 area 0
+network 1.0.0.32 0.0.0.3 area 0
+network 1.0.0.44 0.0.0.3 area 0
+exit
+
+exit

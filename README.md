@@ -13,7 +13,7 @@ _Tomasz Żelawski_
 - ~~NAT 10~~
 - ~~DHCP 10~~
 - Ekstra fiber links w ISP 2
-- **ACL for WWW,SMTP 5** (chyba nie do konca)()
+- **ACL for WWW,SMTP 5** (chyba nie do konca)
 - Mail serwer 3
 
 - Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z klasy C

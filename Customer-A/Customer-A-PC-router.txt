@@ -1,0 +1,24 @@
+enable
+configure terminal
+
+hostname Customer-A-PC-Router
+
+interface GigabitEthernet0/0
+ip address 192.0.0.22 255.255.255.252
+exit
+
+interface GigabitEthernet0/1
+ip address 192.0.0.17 255.255.255.252
+exit
+
+interface GigabitEthernet0/2
+ip address 192.0.0.193 255.255.255.192
+exit
+
+router rip
+version 2
+network 192.0.0.20
+network 192.0.0.16
+exit
+
+exit

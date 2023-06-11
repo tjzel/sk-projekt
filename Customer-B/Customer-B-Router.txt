@@ -1,5 +1,7 @@
 enable
-conf t
+configure terminal
+
+hostname Customer-B-Router
 
 interface GigabitEthernet0/0
 ip address 1.0.0.49 255.255.255.248
@@ -10,6 +12,8 @@ interface GigabitEthernet0/1
 ip address 192.168.0.1 255.255.255.240
 ip nat inside
 exit
+
+ip route 0.0.0.0 0.0.0.0 1.0.0.50
 
 ip dhcp excluded-address 192.168.0.1 192.168.0.3
 
@@ -24,3 +28,5 @@ ip nat inside source static 192.168.0.3 1.0.0.52
 access-list 1 permit 192.168.0.0 0.0.0.15
 ip nat pool Customer-B 1.0.0.49 1.0.0.49 netmask 255.255.255.248
 ip nat inside source list 1 pool Customer-B overload
+
+exit

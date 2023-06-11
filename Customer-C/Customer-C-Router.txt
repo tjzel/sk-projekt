@@ -1,6 +1,8 @@
 enable
 conf t
 
+hostname Customer-C-Router
+
 interface GigabitEthernet0/0
 ip address 1.0.0.38 255.255.255.252
 ip nat outside
@@ -11,8 +13,10 @@ ip address 192.168.0.1 255.255.255.192
 ip nat inside
 exit
 
-ip nat pool Customer-C 1.0.0.38 1.0.0.38 netmask 255.255.255.252
+ip route 0.0.0.0 0.0.0.0 1.0.0.37
 
 access-list 1 permit 192.168.0.0 0.0.0.63
-
+ip nat pool Customer-C 1.0.0.38 1.0.0.38 netmask 255.255.255.252
 ip nat inside source list 1 pool Customer-C overload
+
+exit

@@ -1,0 +1,24 @@
+enable
+configure terminal
+
+hostname Router14
+
+interface GigabitEthernet0/0
+ip address 192.0.0.6 255.255.255.252
+exit
+
+interface GigabitEthernet0/1
+ip address 192.0.0.13 255.255.255.252
+exit
+
+interface GigabitEthernet0/2
+ip address 192.0.0.9 255.255.255.252
+exit
+
+router rip
+version 2
+network 192.0.0.12
+network 192.0.0.4
+exit
+
+exit

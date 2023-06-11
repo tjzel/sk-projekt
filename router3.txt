@@ -1,6 +1,0 @@
-configure terminal
-router ospf 3
-network 1.0.0.32 0.0.0.3 area 0
-network 1.0.0.40 0.0.0.3 area 0
-exit
-exit
