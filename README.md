@@ -12,11 +12,11 @@ _Tomasz Żelawski_
 - Redystrybucja 5 (z wersja BGP 10)
 - ~~NAT 10~~
 - ~~DHCP 10~~
-- Ekstra fiber links w ISP 2
+- ~~Ekstra fiber links w ISP 2~~
 - **ACL for WWW,SMTP 5** (chyba nie do konca)
-- Mail serwer 3
+- ~~Mail serwer 3~~
 
-- Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z klasy C
-- Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych.
-- Strony WWW (onu klientow) maja być dostępne ze wszystkich PC
+- ~~Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z klasy C~~
+- ~~Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych.~~
+- ~~Strony WWW (onu klientow) maja być dostępne ze wszystkich PC~~
 - Dla Klienta B dobrać alokacje VLAN'ów.
