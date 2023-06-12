@@ -1,0 +1,11 @@
+enable
+conf t
+router bgp 100
+redistribute ospf 1
+neighbor 1.0.0.58 remote-as 200
+exit
+router ospf 1
+redistribute bgp 100 subnets
+redistribute connected subnets
+exit
+exit
