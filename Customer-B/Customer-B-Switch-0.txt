@@ -1,0 +1,31 @@
+enable
+
+configure terminal
+
+vlan 2
+name vlan1
+vlan 3
+name vlan2
+vlan 4
+name vlan3
+vlan 5
+name vlan4
+exit
+
+interface FastEthernet0/1
+switchport access vlan 5
+switchport mode access
+exit
+interface FastEthernet0/23
+switchport access vlan 5
+switchport mode access
+exit
+interface FastEthernet0/24
+switchport mode trunk
+exit
+interface GigabitEthernet0/1
+switchport mode trunk
+exit
+interface GigabitEthernet0/2
+switchport mode trunk
+exit
